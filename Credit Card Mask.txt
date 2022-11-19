@@ -1,0 +1,11 @@
+function maskify(cc) {
+    let b = "";
+    for (let i = 0; i < cc.length; i++){
+        if (i !== cc.length && i !== cc.length-1 && i !== cc.length-2 && i !== cc.length-3 && i !== cc.length-4){
+            b = b + "#";
+        } else {
+            b = b + cc[i];
+        }
+    }
+    return b;
+}
