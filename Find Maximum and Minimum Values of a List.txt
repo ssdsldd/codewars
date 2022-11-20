@@ -1,0 +1,19 @@
+var min = function(list){
+  let minList = list[0];
+  for (let i = 0; i < list.length; i++){
+    if (list[i] < minList){
+      minList = list[i];
+    }
+  }
+  return minList;
+}
+
+var max = function(list){
+  let maxList = list[0];
+  for (let i = 0; i < list.length; i++){
+    if (list[i] > maxList){
+      maxList = list[i];
+    }
+  }
+  return maxList;
+}

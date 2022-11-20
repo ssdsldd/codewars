@@ -1,0 +1,4 @@
+function unscrambleEggs(word){
+  word = word.split("egg").join("");
+  return word;
+}
