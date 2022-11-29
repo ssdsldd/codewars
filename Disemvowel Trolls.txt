@@ -1,0 +1,10 @@
+function disemvowel(str){
+  let vowels = "euioa";
+  for (let i = 0; i < str.length; i++){
+      if (vowels.indexOf(str[i].toLowerCase()) > -1){
+          str = str.replace(str[i], '');
+          i--;
+      }
+  }
+  return str;
+}
